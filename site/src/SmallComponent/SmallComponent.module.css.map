@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "SmallComponent.module.scss"
+    ],
+    "names": [],
+    "file": "SmallComponent.module.css"
+}

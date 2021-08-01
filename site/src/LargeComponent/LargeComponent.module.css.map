@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "LargeComponent.module.scss"
+    ],
+    "names": [],
+    "file": "LargeComponent.module.css"
+}
