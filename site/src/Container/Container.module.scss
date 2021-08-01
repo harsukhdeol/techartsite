@@ -1,4 +1,29 @@
 @import "../vars.scss";
 
 .Container {
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+  }
+  .header .footer {
+    width: 100vw;
+    height: 50px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 40px;
+      width: 40px;
+      fill: white;
+    }
+  }
 }

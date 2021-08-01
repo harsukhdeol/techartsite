@@ -5,6 +5,10 @@ import React from "react";
 
 const Page = React.forwardRef(({ data }, ref) => (
   <div ref={ref} className={styles.Page}>
+    <div className={styles.background}>
+      <div className={styles.hBorder} />
+      <div className={styles.vBorder} />
+    </div>
     <h1 className={styles.title}>{data.text}</h1>
     <LargeComponent {...data.large} />
     <div className={styles.grid}>
