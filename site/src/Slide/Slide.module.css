@@ -21,6 +21,11 @@
   background-position: center;
 }
 
+.Slide .background video {
+  height: 100%;
+  width: 100%;
+}
+
 .Slide .text {
   color: white;
 }

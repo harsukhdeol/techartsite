@@ -1,7 +1,29 @@
-let pages = [
+let menu = [
   {
     text: "VFX",
     image: "./vfx.jpg",
+  },
+  {
+    text: "VFX",
+    image: "./vfx.jpg",
+  },
+  {
+    text: "VFX",
+    image: "./vfx.jpg",
+  },
+  {
+    text: "VFX",
+    image: "./vfx.jpg",
+  },
+  {
+    text: "VFX",
+    image: "./vfx.jpg",
+  },
+];
+let pages = [
+  {
+    text: "VFX",
+    video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",
       text: "Niagra particle effects with unreal",
@@ -31,7 +53,7 @@ let pages = [
   },
   {
     text: "UI",
-    image: "./logo512.png",
+    video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",
       text: "Niagra particle effects with unreal",
@@ -53,7 +75,7 @@ let pages = [
   },
   {
     text: "AR/VR",
-    image: "./logo512.png",
+    video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",
       text: "Niagra particle effects with unreal",
@@ -75,7 +97,7 @@ let pages = [
   },
   {
     text: "PROCEDURAL GENERATION",
-    image: "./logo512.png",
+    video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",
       text: "Niagra particle effects with unreal",
@@ -97,7 +119,7 @@ let pages = [
   },
   {
     text: "WEB DEV",
-    image: "./logo512.png",
+    video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",
       text: "Niagra particle effects with unreal",
@@ -119,4 +141,4 @@ let pages = [
   },
 ];
 
-export default pages;
+export { menu, pages };
