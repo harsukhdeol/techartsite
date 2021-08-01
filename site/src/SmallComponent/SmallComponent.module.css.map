@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AACE,eADa,CACb,YAAY,CAAC;EACX,KAAK,ECAI,IAAI;CDCd",
     "sources": [
-        "SmallComponent.module.scss"
+        "SmallComponent.module.scss",
+        "../vars.scss"
     ],
     "names": [],
     "file": "SmallComponent.module.css"

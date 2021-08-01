@@ -1,6 +1,9 @@
 @import "../vars.scss";
 
 .Page {
+  .title {
+    color: $body-text;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

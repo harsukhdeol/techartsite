@@ -1,3 +1,7 @@
+.Page .title {
+  color: #fff;
+}
+
 .Page .grid {
   display: -ms-grid;
   display: grid;

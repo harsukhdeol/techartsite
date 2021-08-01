@@ -13,13 +13,12 @@
     transform: translate(-20vw, 0);
   }
   .divider {
-    background: linear-gradient(to left, $background 70%, rgba(0, 0, 0, 0));
-    height: 170vh;
-    width: 150vh;
-    position: fixed;
-    right: -20vw;
-    top: -30vw;
-    transform: rotate(-30deg);
+    background: linear-gradient(230deg, $background 30%, rgba(0, 0, 0, 0) 50%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    //top: -30vw;
   }
   .menuContainer {
     position: absolute;

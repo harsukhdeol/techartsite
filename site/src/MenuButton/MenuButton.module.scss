@@ -14,11 +14,11 @@
     background-clip: border-box;
     background-position: center;
 
-    border: 1px solid turquoise;
+    border: 1px solid $dark-color;
     border-radius: 10px;
   }
   .text {
-    color: white;
+    color: $light-gray;
     margin: 0 10px;
   }
 }

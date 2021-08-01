@@ -16,12 +16,12 @@
   background-repeat: no-repeat;
   background-clip: border-box;
   background-position: center;
-  border: 1px solid turquoise;
+  border: 1px solid #2fa095;
   border-radius: 10px;
 }
 
 .MenuButton .text {
-  color: white;
+  color: #aaa;
   margin: 0 10px;
 }
 /*# sourceMappingURL=MenuButton.module.css.map */

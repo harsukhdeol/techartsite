@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AACE,eADa,CACb,YAAY,CAAC;EACX,KAAK,ECAI,IAAI;CDCd",
     "sources": [
         "LargeComponent.module.scss",
         "../vars.scss"
