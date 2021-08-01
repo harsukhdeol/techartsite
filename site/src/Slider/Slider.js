@@ -26,7 +26,7 @@ function Slider() {
       </div>
       <div className={styles.dots}>
         {pages.map((page, i) => (
-          <span className={styles.dot} onClick={currentSlide(i)} />
+          <span key={i} className={styles.dot} onClick={currentSlide(i)} />
         ))}
       </div>
     </div>

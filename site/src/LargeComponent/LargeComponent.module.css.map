@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "LargeComponent.module.scss"
+        "LargeComponent.module.scss",
+        "../vars.scss"
     ],
     "names": [],
     "file": "LargeComponent.module.css"

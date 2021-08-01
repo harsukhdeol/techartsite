@@ -7,8 +7,8 @@ export default function Page(data) {
     <div className={styles.Page}>
       <LargeComponent {...data.large} />
       <div className={styles.grid}>
-        {data.small.map((item) => (
-          <SmallComponent {...item} />
+        {data.small.map((item, i) => (
+          <SmallComponent key={i} {...item} />
         ))}
       </div>
     </div>

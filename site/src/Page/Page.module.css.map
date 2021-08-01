@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AACE,KADG,CACH,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;CACtC",
     "sources": [
-        "Page.module.scss"
+        "Page.module.scss",
+        "../vars.scss"
     ],
     "names": [],
     "file": "Page.module.css"
