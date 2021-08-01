@@ -6,7 +6,16 @@
 .Slider .slideContainer {
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   -webkit-transform: translate(-30vw, 0);
           transform: translate(-30vw, 0);
+}
+
+.Slider .menuContainer {
+  position: absolute;
+  right: 0;
+  top: 50px;
 }
 /*# sourceMappingURL=Slider.module.css.map */

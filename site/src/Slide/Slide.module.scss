@@ -1,21 +1,18 @@
 @import "../vars.scss";
 
 .Slide {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
   .background {
     background-color: blue;
-    width: 900px;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     video {
-      height: 100%;
-      width: 100%;
+      height: 100vh;
+      width: 100vw;
     }
   }
   .text {
