@@ -10,12 +10,12 @@ class Slider extends React.Component {
       <div className={styles.Slider}>
         <div className={styles.slideContainer}>
           {pages.map((page, i) => (
-            <Slide key={i} {...page} />
+            <Slide key={i} index={i} data={page} />
           ))}
         </div>
         <div className={styles.menuContainer}>
           {menu.map((item, i) => (
-            <MenuButton {...item} />
+            <MenuButton key={i} {...item} />
           ))}
         </div>
       </div>
