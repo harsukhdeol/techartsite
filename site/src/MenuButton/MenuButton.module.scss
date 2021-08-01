@@ -1,14 +1,14 @@
 @import "../vars.scss";
 
 .MenuButton {
-  width: 300px;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  justify-content: flex-end;
+  margin: 0 5vw 2rem 0;
   cursor: pointer;
   .image {
-    width: 200px;
-    height: 102px;
+    width: 120px;
+    height: 80px;
     background-size: cover;
 
     background-repeat: no-repeat;
@@ -20,6 +20,6 @@
   }
   .text {
     color: $light-gray;
-    margin: 0 10px;
+    margin: 0 2rem;
   }
 }

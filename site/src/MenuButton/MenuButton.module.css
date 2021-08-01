@@ -1,18 +1,20 @@
 .MenuButton {
-  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 5vw 2rem 0;
   cursor: pointer;
 }
 
 .MenuButton .image {
-  width: 200px;
-  height: 102px;
+  width: 120px;
+  height: 80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -23,6 +25,6 @@
 
 .MenuButton .text {
   color: #aaa;
-  margin: 0 10px;
+  margin: 0 2rem;
 }
 /*# sourceMappingURL=MenuButton.module.css.map */
