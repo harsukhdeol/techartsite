@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=MenuButton.module.css.map */
+.MenuButton {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.MenuButton .image {
+  width: 200px;
+  height: 102px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: center;
+  border: 1px solid turquoise;
+  border-radius: 10px;
+}
+
+.MenuButton .text {
+  color: white;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=MenuButton.module.css.map */

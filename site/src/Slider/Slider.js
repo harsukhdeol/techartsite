@@ -13,6 +13,7 @@ class Slider extends React.Component {
             <Slide key={i} index={i} data={page} />
           ))}
         </div>
+        <div className={styles.divider} />
         <div className={styles.menuContainer}>
           {menu.map((item, i) => (
             <MenuButton key={i} {...item} />

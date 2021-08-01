@@ -1,1 +1,24 @@
 @import "../vars.scss";
+
+.MenuButton {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  .image {
+    width: 200px;
+    height: 102px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+
+    border: 1px solid turquoise;
+    border-radius: 10px;
+  }
+  .text {
+    color: white;
+    margin: 0 10px;
+  }
+}

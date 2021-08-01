@@ -6,24 +6,28 @@
 }
 
 .Slide .background {
-  background-color: blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #1d1d1d;
 }
 
 .Slide .background video {
+  height: 90vh;
+  width: auto;
+  position: absolute;
+  top: 5vh;
+  z-index: -1;
+}
+
+.Slide .overlay {
+  position: absolute;
   height: 100vh;
   width: 100vw;
 }
 
 .Slide .text {
   color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
 }
 /*# sourceMappingURL=Slide.module.css.map */
