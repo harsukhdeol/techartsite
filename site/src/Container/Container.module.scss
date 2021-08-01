@@ -1,20 +1,29 @@
 @import "../vars.scss";
 
 .Container {
+  overflow-x: hidden;
   .overlay {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
+    bottom: 0;
   }
-  .header .footer {
+  .header,
+  .footer {
     width: 100vw;
     height: 50px;
+    color: white;
+    position: absolute;
+    .scroll {
+      background-color: $gray;
+    }
+  }
+  .header {
+    top: 0;
   }
   .footer {
-    position: absolute;
     bottom: 0;
-    width: 100vw;
   }
   .socials {
     display: flex;
@@ -24,6 +33,24 @@
       height: 40px;
       width: 40px;
       fill: white;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    button {
+      display: flex;
+      color: white;
+      background-color: transparent;
+    }
+    .icon {
+      height: 20px;
+      width: 1rem;
+      background-color: $light-gray;
     }
   }
 }

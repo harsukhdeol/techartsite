@@ -2,14 +2,48 @@ import styles from "./Container.module.css";
 import Slider from "../Slider/Slider";
 import Page from "../Page/Page";
 import { pages, menu } from "../data/data";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 
 export default function Container() {
   const pagesRef = useRef([]);
+  const menuButtonRef = useRef([menu.length + 1]);
   const slider = useRef(null);
+  const header = useRef(null);
+  const footer = useRef(null);
+  const [scrollPos, setScrollPos] = useState(0);
+
   useEffect(() => {
-    console.log(pagesRef);
-  }, [pagesRef]);
+    let pos = window.scrollY;
+    setScrollPos(pos);
+    const handleScroll = () => {
+      if (pos > window.innerHeight) {
+        gsap.to([header.current, footer.current], {
+          backgroundColor: "#aaa",
+          duration: 2,
+        });
+      } else {
+        gsap.to([header.current, footer.current], {
+          backgroundColor: "#000",
+          duration: 2,
+        });
+      }
+      // console.log(scrollPos);
+
+      menuButtonRef.current.forEach((button, i) => {
+        let top = window.innerHeight * i;
+        let bottom = window.innerHeight * (i + 1);
+        console.log([top, bottom]);
+        if (pos > top && pos < bottom) {
+          gsap.to([button], { backgroundColor: "#9922dd", duration: 2 });
+        } else {
+          gsap.to([button], { backgroundColor: "#444", duration: 2 });
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, [scrollPos]);
+
   function onClick(i) {
     pagesRef.current[i].scrollIntoView();
   }
@@ -28,10 +62,10 @@ export default function Container() {
         ))}
       </div>
       <div className={styles.overlay}>
-        <div className={styles.header}>
+        <div ref={header} className={styles.header}>
           <h2 className={styles.name}>Harsukh Deol</h2>
         </div>
-        <div className={styles.footer}>
+        <div ref={footer} className={styles.footer}>
           <ul className={styles.socials}>
             <li>
               <a href="mailto:harsukhkdeol@gmail.com" title="Email">
@@ -94,15 +128,21 @@ export default function Container() {
             onClick={() => {
               slider.current.scrollIntoView();
             }}
+            ref={(btnref) => (menuButtonRef.current[0] = btnref)}
           >
+            <div className={styles.icon} />
             Home
           </button>
+          {console.log(menu.length)}
           {menu.map((item, i) => (
             <button
               key={i}
               className={styles.menuButton}
               onClick={() => onClick(i)}
+              ref={(btnref) => (menuButtonRef.current[i + 1] = btnref)}
             >
+              {console.log([item, i])}
+              <div className={styles.icon} />
               {item.text}
             </button>
           ))}
