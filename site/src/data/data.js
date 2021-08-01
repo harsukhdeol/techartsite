@@ -4,19 +4,15 @@ let menu = [
     image: "./vfx.jpg",
   },
   {
-    text: "VFX",
+    text: "UX/UI Dev",
     image: "./vfx.jpg",
   },
   {
-    text: "VFX",
+    text: "AR/VR",
     image: "./vfx.jpg",
   },
   {
-    text: "VFX",
-    image: "./vfx.jpg",
-  },
-  {
-    text: "VFX",
+    text: "Procedural",
     image: "./vfx.jpg",
   },
 ];
@@ -52,10 +48,10 @@ let pages = [
     ],
   },
   {
-    text: "UI",
-    video: "./vfx.mp4",
+    text: "UX/UI Dev",
+    video: "./ui.mp4",
     large: {
-      video: "./vfx.mp4",
+      video: "./ui.mp4",
       text: "Niagra particle effects with unreal",
     },
     small: [
@@ -96,29 +92,7 @@ let pages = [
     ],
   },
   {
-    text: "PROCEDURAL GENERATION",
-    video: "./vfx.mp4",
-    large: {
-      video: "./vfx.mp4",
-      text: "Niagra particle effects with unreal",
-    },
-    small: [
-      {
-        video: "./vfx.mp4",
-        text: "Niagra particle effects with unreal",
-      },
-      {
-        video: "./vfx.mp4",
-        text: "Niagra particle effects with unreal",
-      },
-      {
-        video: "./vfx.mp4",
-        text: "Niagra particle effects with unreal",
-      },
-    ],
-  },
-  {
-    text: "WEB DEV",
+    text: "PROCEDURAL",
     video: "./vfx.mp4",
     large: {
       video: "./vfx.mp4",

@@ -8,20 +8,40 @@
     height: 100vh;
     top: 0;
     bottom: 0;
+    pointer-events: none;
   }
   .header,
   .footer {
     width: 100vw;
-    height: 50px;
+    height: 5rem;
     color: white;
     position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     .scroll {
       background-color: $gray;
     }
   }
   .header {
     top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    > * {
+      position: relative;
+
+      left: 10vw;
+      text-transform: uppercase;
+    }
+    :first-child {
+      top: 10vh;
+    }
+    :nth-child(2) {
+      top: 2rem;
+      font-weight: 500;
+    }
   }
+
   .footer {
     bottom: 0;
   }
@@ -29,6 +49,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: auto;
+    position: relative;
+    bottom: 5vh;
+    left: 10vw;
     svg {
       height: 40px;
       width: 40px;
@@ -42,10 +66,13 @@
     position: absolute;
     top: 20%;
     left: 10%;
+    opacity: 0;
+    pointer-events: auto;
     button {
       display: flex;
       color: white;
       background-color: transparent;
+      cursor: pointer;
     }
     .icon {
       height: 20px;

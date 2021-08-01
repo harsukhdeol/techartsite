@@ -8,7 +8,7 @@ function Slide({ data, index }) {
 
   useEffect(() => {
     // video.current.play();
-    let tl = gsap.timeline({ repeat: -1, repeatDelay: 24, delay: 6 * index });
+    let tl = gsap.timeline({ repeat: -1, repeatDelay: 18, delay: 6 * index });
 
     tl.to([slide.current], {
       opacity: 1,
@@ -25,12 +25,10 @@ function Slide({ data, index }) {
   });
   return (
     <div ref={slide} className={styles.Slide}>
-      <div className={styles.background}>
-        <video ref={video} autoPlay muted controls loop>
-          <source src={data.video} type="video/mp4"></source>
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <video ref={video} autoPlay muted controls loop>
+        <source src={data.video} type="video/mp4"></source>
+        Your browser does not support the video tag.
+      </video>
       <div className={styles.overlay}>
         <h1 className={styles.text}>{data.text}</h1>
       </div>

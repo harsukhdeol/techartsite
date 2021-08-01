@@ -7,9 +7,12 @@ import styles from "./Slider.module.css";
 const Slider = React.forwardRef(({ onClick }, ref) => (
   <div ref={ref} className={styles.Slider}>
     <div className={styles.slideContainer}>
-      {pages.map((page, i) => (
-        <Slide key={i} index={i} data={page} />
-      ))}
+      <div>
+        {pages.map((page, i) => (
+          <Slide key={i} index={i} data={page} />
+        ))}
+      </div>
+      <div className={styles.overlay} />
     </div>
     <div className={styles.divider} />
     <div className={styles.menuContainer}>

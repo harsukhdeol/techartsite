@@ -5,11 +5,7 @@
   opacity: 0;
 }
 
-.Slide .background {
-  background-color: black;
-}
-
-.Slide .background video {
+.Slide video {
   height: 90vh;
   width: auto;
   position: absolute;
@@ -27,7 +23,7 @@
   color: white;
   font-size: 70px;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 30%;
 }
 /*# sourceMappingURL=Slide.module.css.map */

@@ -8,44 +8,54 @@ import gsap from "gsap";
 export default function Container() {
   const pagesRef = useRef([]);
   const menuButtonRef = useRef([menu.length + 1]);
+  const menuRef = useRef(null);
   const slider = useRef(null);
   const header = useRef(null);
   const footer = useRef(null);
   const [scrollPos, setScrollPos] = useState(0);
 
   useEffect(() => {
-    let pos = window.scrollY;
-    setScrollPos(pos);
     const handleScroll = () => {
+      let pos = window.scrollY;
+      setScrollPos(pos);
       if (pos > window.innerHeight) {
         gsap.to([header.current, footer.current], {
           backgroundColor: "#aaa",
           duration: 2,
+
+          justifyContent: "center",
         });
+        gsap.to([menuRef.current], { opacity: 1, duration: 1 });
       } else {
         gsap.to([header.current, footer.current], {
-          backgroundColor: "#000",
+          backgroundColor: "transparent",
           duration: 2,
+
+          justifyContent: "flex-start",
         });
+        gsap.to([menuRef.current], { opacity: 0, duration: 0.5 });
       }
       // console.log(scrollPos);
 
       menuButtonRef.current.forEach((button, i) => {
         let top = window.innerHeight * i;
+        let offset = window.innerHeight * 0.1;
         let bottom = window.innerHeight * (i + 1);
         console.log([top, bottom]);
-        if (pos > top && pos < bottom) {
-          gsap.to([button], { backgroundColor: "#9922dd", duration: 2 });
+        if (pos >= top - offset && pos < bottom - offset) {
+          gsap.to([button], { backgroundColor: "#9922dd", duration: 1 });
         } else {
-          gsap.to([button], { backgroundColor: "#444", duration: 2 });
+          gsap.to([button], { backgroundColor: "#444", duration: 1 });
         }
       });
     };
     window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [scrollPos]);
 
   function onClick(i) {
     pagesRef.current[i].scrollIntoView();
+    console.log(i);
   }
 
   return (
@@ -63,7 +73,8 @@ export default function Container() {
       </div>
       <div className={styles.overlay}>
         <div ref={header} className={styles.header}>
-          <h2 className={styles.name}>Harsukh Deol</h2>
+          <h2>Harsukh Deol</h2>
+          <h3> Technical Artist</h3>
         </div>
         <div ref={footer} className={styles.footer}>
           <ul className={styles.socials}>
@@ -122,7 +133,7 @@ export default function Container() {
             </li>
           </ul>
         </div>
-        <div className={styles.menu}>
+        <div ref={menuRef} className={styles.menu}>
           <button
             className={styles.toTop}
             onClick={() => {
@@ -133,7 +144,6 @@ export default function Container() {
             <div className={styles.icon} />
             Home
           </button>
-          {console.log(menu.length)}
           {menu.map((item, i) => (
             <button
               key={i}
@@ -141,7 +151,6 @@ export default function Container() {
               onClick={() => onClick(i)}
               ref={(btnref) => (menuButtonRef.current[i + 1] = btnref)}
             >
-              {console.log([item, i])}
               <div className={styles.icon} />
               {item.text}
             </button>

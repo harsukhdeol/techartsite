@@ -8,14 +8,24 @@
   height: 100vh;
   top: 0;
   bottom: 0;
+  pointer-events: none;
 }
 
 .Container .header,
 .Container .footer {
   width: 100vw;
-  height: 50px;
+  height: 5rem;
   color: white;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .Container .header .scroll,
@@ -25,6 +35,28 @@
 
 .Container .header {
   top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.Container .header > * {
+  position: relative;
+  left: 10vw;
+  text-transform: uppercase;
+}
+
+.Container .header :first-child {
+  top: 10vh;
+}
+
+.Container .header :nth-child(2) {
+  top: 2rem;
+  font-weight: 500;
 }
 
 .Container .footer {
@@ -41,6 +73,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  pointer-events: auto;
+  position: relative;
+  bottom: 5vh;
+  left: 10vw;
 }
 
 .Container .socials svg {
@@ -60,6 +96,8 @@
   position: absolute;
   top: 20%;
   left: 10%;
+  opacity: 0;
+  pointer-events: auto;
 }
 
 .Container .menu button {
@@ -68,6 +106,7 @@
   display: flex;
   color: white;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .Container .menu .icon {
