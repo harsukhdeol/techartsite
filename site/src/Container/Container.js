@@ -11,10 +11,11 @@ export default function Container() {
   }, [pagesRef]);
   function onClick(i) {
     pagesRef.current[i].scrollIntoView();
+    console.log("clicked " + i);
   }
   return (
     <div className={styles.Container}>
-      <Slider onClickFunc={onClick} />
+      <Slider onClick={onClick} />
       <div className={styles.body}>
         {pages.map((page, i) => (
           <Page

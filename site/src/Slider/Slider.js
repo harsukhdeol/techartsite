@@ -15,7 +15,7 @@ function Slider({ onClick }) {
       <div className={styles.divider} />
       <div className={styles.menuContainer}>
         {menu.map((item, i) => (
-          <MenuButton key={i} index={i} data={item} onClickFunc={onClick} />
+          <MenuButton key={i} index={i} data={item} onClick={onClick} />
         ))}
       </div>
     </div>
