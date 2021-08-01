@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
     "sources": [
-        "Slider.module.scss"
+        "Slider.module.scss",
+        "../vars.scss"
     ],
     "names": [],
     "file": "Slider.module.css"

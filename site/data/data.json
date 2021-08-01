@@ -1,9 +1,0 @@
-{
-  "pages": [
-    { "name": "VFX", "image": "./vfx.jpg" },
-    { "name": "UI", "image": ".logo512.png" },
-    { "name": "AR/VR", "image": ".logo512.png" },
-    { "name": "PROCEDURAL GENERATION", "image": ".logo512.png" },
-    { "name": "WEB DEV", "image": ".logo512.png" }
-  ]
-}
