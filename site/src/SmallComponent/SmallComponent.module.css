@@ -1,4 +1,9 @@
 .SmallComponent .description {
   color: #aaa;
 }
+
+.SmallComponent video {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=SmallComponent.module.css.map */

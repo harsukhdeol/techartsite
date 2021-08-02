@@ -4,8 +4,13 @@
   .title {
     color: $body-text;
   }
+  .background {
+    display: grid;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem;
+    gap: 1rem;
   }
 }

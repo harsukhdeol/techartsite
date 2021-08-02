@@ -1,7 +1,16 @@
 @import "../vars.scss";
 
 .LargeComponent {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem;
   .description {
     color: $light-gray;
+    margin: 3rem;
+  }
+  video {
+    width: 50%;
+    height: auto;
   }
 }

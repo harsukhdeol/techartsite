@@ -2,10 +2,17 @@
   color: #fff;
 }
 
+.Page .background {
+  display: -ms-grid;
+  display: grid;
+}
+
 .Page .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  margin: 0 2rem;
+  gap: 1rem;
 }
 /*# sourceMappingURL=Page.module.css.map */
