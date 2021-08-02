@@ -22,6 +22,8 @@ export default function Container() {
         gsap.to([footer.current], {
           duration: 1,
           justifyContent: "center",
+          height: " auto",
+          fill: "#555",
         });
         gsap.to([header.current], {
           duration: 1,
@@ -32,6 +34,8 @@ export default function Container() {
         gsap.to([footer.current], {
           duration: 1,
           justifyContent: "flex-start",
+          height: "170px",
+          fill: "white",
         });
         gsap.to([header.current], {
           duration: 1,

@@ -16,7 +16,7 @@
   width: 100vw;
   height: 5rem;
   color: white;
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,8 +58,11 @@
 
 .Container .footer {
   bottom: 0;
+  left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
   background: linear-gradient(rgba(0, 0, 0, 0), black);
+  fill: white;
+  stroke: none;
 }
 
 .Container .socials {
@@ -73,15 +76,12 @@
       -ms-flex-align: center;
           align-items: center;
   pointer-events: auto;
-  position: relative;
-  bottom: 5vh;
-  left: 10vw;
+  margin: 0 10vw;
 }
 
 .Container .socials svg {
   height: 40px;
   width: 40px;
-  fill: white;
 }
 
 .Container .menu {

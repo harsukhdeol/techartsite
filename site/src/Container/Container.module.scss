@@ -15,7 +15,7 @@
     width: 100vw;
     height: 5rem;
     color: white;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -43,20 +43,20 @@
 
   .footer {
     bottom: 0;
+    left: 0;
     background: linear-gradient(rgba(0, 0, 0, 0), $background);
+    fill: white;
+    stroke: none;
   }
   .socials {
     display: flex;
     justify-content: center;
     align-items: center;
     pointer-events: auto;
-    position: relative;
-    bottom: 5vh;
-    left: 10vw;
+    margin: 0 10vw;
     svg {
       height: 40px;
       width: 40px;
-      fill: white;
     }
   }
 
