@@ -19,23 +19,26 @@ export default function Container() {
       let pos = window.scrollY;
       setScrollPos(pos);
       if (pos > window.innerHeight) {
-        gsap.to([header.current, footer.current], {
-          backgroundColor: "#aaa",
-          duration: 2,
-
+        gsap.to([footer.current], {
+          duration: 1,
           justifyContent: "center",
+        });
+        gsap.to([header.current], {
+          duration: 1,
+          opacity: 0,
         });
         gsap.to([menuRef.current], { opacity: 1, duration: 1 });
       } else {
-        gsap.to([header.current, footer.current], {
-          backgroundColor: "transparent",
-          duration: 2,
-
+        gsap.to([footer.current], {
+          duration: 1,
           justifyContent: "flex-start",
+        });
+        gsap.to([header.current], {
+          duration: 1,
+          opacity: 1,
         });
         gsap.to([menuRef.current], { opacity: 0, duration: 0.5 });
       }
-      // console.log(scrollPos);
 
       menuButtonRef.current.forEach((button, i) => {
         let top = window.innerHeight * i;

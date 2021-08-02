@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AACE,eADa,CACb,YAAY,CAAC;EACX,KAAK,ECAI,IAAI;CDCd;;AAHH,AAIE,eAJa,CAIb,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "mappings": "AAEA,AACE,eADa,CACb,YAAY,CAAC;EACX,KAAK,ECAI,IAAI;EDCb,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,MAAM;CACf;;AALH,AAME,eANa,CAMb,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
     "sources": [
         "SmallComponent.module.scss",
         "../vars.scss"

@@ -1,5 +1,7 @@
 .SmallComponent .description {
   color: #aaa;
+  text-align: left;
+  margin: 0 1rem;
 }
 
 .SmallComponent video {

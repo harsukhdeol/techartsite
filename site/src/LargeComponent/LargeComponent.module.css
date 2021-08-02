@@ -5,16 +5,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem;
 }
 
 .LargeComponent .description {
   color: #aaa;
-  margin: 3rem;
+  margin-left: 3rem;
+  text-align: left;
 }
 
 .LargeComponent video {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 /*# sourceMappingURL=LargeComponent.module.css.map */

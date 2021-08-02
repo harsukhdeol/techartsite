@@ -28,11 +28,6 @@
           align-items: center;
 }
 
-.Container .header .scroll,
-.Container .footer .scroll {
-  background-color: #111;
-}
-
 .Container .header {
   top: 0;
   -webkit-box-orient: vertical;
@@ -42,6 +37,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
 }
 
 .Container .header > * {
@@ -61,6 +58,8 @@
 
 .Container .footer {
   bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
 }
 
 .Container .socials {
@@ -95,7 +94,7 @@
           flex-flow: column;
   position: absolute;
   top: 20%;
-  left: 10%;
+  left: 30px;
   opacity: 0;
   pointer-events: auto;
 }
