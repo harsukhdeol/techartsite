@@ -1,79 +1,75 @@
 let menu = [
   {
     text: "VFX",
-    image: "./vfx.jpg",
+    image: "./vfx/vfx.jpg",
   },
   {
     text: "UX/UI Dev",
-    image: "./vfx.jpg",
+    image: "./ui/ui.png",
   },
   {
     text: "AR/VR",
-    image: "./vfx.jpg",
+    image: "./arvr/arvr.png",
   },
   {
-    text: "Procedural",
-    image: "./vfx.jpg",
+    text: "Materials",
+    image: "./materials/materials.png",
   },
 ];
 let pages = [
   {
     text: "VFX",
-    video: "./vfx.mp4",
+    video: "./vfx/vfx.mp4",
     large: {
-      video: "./vfx.mp4",
+      video: "./vfx/vfx.mp4",
       text: "Niagra particle effects with unreal",
     },
     small: [
       {
-        video: "./vfx.mp4",
+        video: "./vfx/2.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./vfx/3.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./vfx/4.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./vfx/5.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./vfx/6.mp4",
         text: "Niagra particle effects with unreal",
       },
     ],
   },
   {
     text: "UX/UI Dev",
-    video: "./ui.mp4",
+    video: "./ui/ui.mp4",
     large: {
-      video: "./ui.mp4",
+      video: "./ui/ui.mp4",
       text: "Niagra particle effects with unreal",
     },
     small: [
       {
-        video: "./vfx.mp4",
+        video: "./ui/2.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
-        text: "Niagra particle effects with unreal",
-      },
-      {
-        video: "./vfx.mp4",
+        video: "./ui/3.mp4",
         text: "Niagra particle effects with unreal",
       },
     ],
   },
   {
     text: "AR/VR",
-    video: "./vfx.mp4",
+    video: "./arvr/arvr.mov",
     large: {
-      video: "./vfx.mp4",
+      video: "./arvr/arvr.mov",
       text: "Niagra particle effects with unreal",
     },
     small: [
@@ -92,23 +88,40 @@ let pages = [
     ],
   },
   {
-    text: "PROCEDURAL",
-    video: "./vfx.mp4",
+    text: "Materials",
+    video: "./materials/1.mp4",
     large: {
-      video: "./vfx.mp4",
+      video: "./materials/1.mp4",
       text: "Niagra particle effects with unreal",
     },
     small: [
       {
-        video: "./vfx.mp4",
+        video: "./materials/2.mp4",
+        text: "Niagra particle effects with unreal",
+      },
+
+      {
+        video: "./materials/3.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./materials/4.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./materials/5.mp4",
+        text: "Niagra particle effects with unreal",
+      },
+      {
+        video: "./materials/6.mp4",
+        text: "Niagra particle effects with unreal",
+      },
+      {
+        video: "./materials/7.mp4",
+        text: "Niagra particle effects with unreal",
+      },
+      {
+        video: "./materials/8.mp4",
         text: "Niagra particle effects with unreal",
       },
     ],
