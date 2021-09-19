@@ -59,7 +59,7 @@ const Slider = React.forwardRef(({ onClick }, ref) => {
   return (
     <div ref={ref} className={styles.Slider}>
       <div className={styles.slideContainer}>
-        <div>
+        <div className={styles.slides}>
           {pages.map((page, i) => (
             <Slide
               ref={(slide) => {

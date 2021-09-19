@@ -33,10 +33,10 @@
       text-transform: uppercase;
     }
     :first-child {
-      top: 7vh;
+      margin-top: 7vh;
     }
     :nth-child(2) {
-      top: 1rem;
+      margin: 0;
       font-weight: 500;
     }
   }
@@ -73,10 +73,16 @@
       color: white;
       background-color: transparent;
       cursor: pointer;
+      align-items: center;
+
+      border: none;
+      margin: 0;
+      text-decoration: none;
     }
     .icon {
-      height: 20px;
-      width: 1rem;
+      height: 30px;
+      width: 3px;
+      margin: 8px;
       background-color: $light-gray;
     }
   }

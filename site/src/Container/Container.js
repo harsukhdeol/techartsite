@@ -30,13 +30,23 @@ export default function Container() {
           opacity: 0,
         });
         gsap.to([menuRef.current], { opacity: 1, duration: 1 });
-      } else {
+      } else if (pos < window.innerHeight / 2) {
         gsap.to([footer.current], {
           duration: 1,
           justifyContent: "flex-start",
           height: "170px",
-          fill: "white",
+          // fill: "white",
         });
+        let length = footer.current.children[0].children.length;
+        for (let i = 0; i < length; i++) {
+          let li =
+            footer.current.children[0].children[i].children[0].children[0]
+              .children[0];
+          console.log(li);
+          gsap.to([li], { duration: 1, fill: "white" });
+        }
+        //let svg = li.children[0].children[0];
+
         gsap.to([header.current], {
           duration: 1,
           opacity: 1,
@@ -48,11 +58,16 @@ export default function Container() {
         let top = window.innerHeight * i;
         let offset = window.innerHeight * 0.1;
         let bottom = window.innerHeight * (i + 1);
-        console.log([top, bottom]);
         if (pos >= top - offset && pos < bottom - offset) {
-          gsap.to([button], { backgroundColor: "#9922dd", duration: 1 });
+          gsap.to([button.children[0]], {
+            backgroundColor: "#9922dd",
+            duration: 1,
+          });
         } else {
-          gsap.to([button], { backgroundColor: "#444", duration: 1 });
+          gsap.to([button.children[0]], {
+            backgroundColor: "#444",
+            duration: 1,
+          });
         }
       });
     };
