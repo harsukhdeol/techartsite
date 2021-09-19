@@ -16,5 +16,6 @@
 .LargeComponent video {
   width: 70%;
   height: auto;
+  max-height: 500px;
 }
 /*# sourceMappingURL=LargeComponent.module.css.map */
