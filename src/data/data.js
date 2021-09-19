@@ -74,15 +74,15 @@ let pages = [
     },
     small: [
       {
-        video: "./vfx.mp4",
+        video: "./arvr/2.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./arvr/3.mp4",
         text: "Niagra particle effects with unreal",
       },
       {
-        video: "./vfx.mp4",
+        video: "./arvr/4.mp4",
         text: "Niagra particle effects with unreal",
       },
     ],
