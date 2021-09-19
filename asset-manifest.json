@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/techartsite/static/css/main.237f2a45.chunk.css",
+    "main.js": "/techartsite/static/js/main.807f7454.chunk.js",
+    "main.js.map": "/techartsite/static/js/main.807f7454.chunk.js.map",
+    "runtime-main.js": "/techartsite/static/js/runtime-main.5edfac66.js",
+    "runtime-main.js.map": "/techartsite/static/js/runtime-main.5edfac66.js.map",
+    "static/js/2.d5e1b9c4.chunk.js": "/techartsite/static/js/2.d5e1b9c4.chunk.js",
+    "static/js/2.d5e1b9c4.chunk.js.map": "/techartsite/static/js/2.d5e1b9c4.chunk.js.map",
+    "static/js/3.de4226fd.chunk.js": "/techartsite/static/js/3.de4226fd.chunk.js",
+    "static/js/3.de4226fd.chunk.js.map": "/techartsite/static/js/3.de4226fd.chunk.js.map",
+    "index.html": "/techartsite/index.html",
+    "static/css/main.237f2a45.chunk.css.map": "/techartsite/static/css/main.237f2a45.chunk.css.map",
+    "static/js/2.d5e1b9c4.chunk.js.LICENSE.txt": "/techartsite/static/js/2.d5e1b9c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5edfac66.js",
+    "static/js/2.d5e1b9c4.chunk.js",
+    "static/css/main.237f2a45.chunk.css",
+    "static/js/main.807f7454.chunk.js"
+  ]
+}
