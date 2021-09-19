@@ -4,18 +4,6 @@
   overflow: hidden;
 }
 
-.Slider .slides {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
 .Slider .slideContainer {
   width: 100vw;
   height: 100vh;
@@ -37,7 +25,7 @@
 }
 
 .Slider .divider {
-  background: linear-gradient(230deg, black 30%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(250deg, black 20%, rgba(0, 0, 0, 0) 90%);
   height: 100vh;
   width: 100vw;
   position: absolute;

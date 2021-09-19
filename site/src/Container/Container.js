@@ -30,28 +30,18 @@ export default function Container() {
           opacity: 0,
         });
         gsap.to([menuRef.current], { opacity: 1, duration: 1 });
-      } else if (pos < window.innerHeight / 2) {
+      } else if (pos < window.innerHeight * 1.5) {
+        gsap.to([menuRef.current], { opacity: 0, duration: 0.5 });
         gsap.to([footer.current], {
           duration: 1,
           justifyContent: "flex-start",
           height: "170px",
-          // fill: "white",
         });
-        let length = footer.current.children[0].children.length;
-        for (let i = 0; i < length; i++) {
-          let li =
-            footer.current.children[0].children[i].children[0].children[0]
-              .children[0];
-          console.log(li);
-          gsap.to([li], { duration: 1, fill: "white" });
-        }
-        //let svg = li.children[0].children[0];
 
         gsap.to([header.current], {
           duration: 1,
           opacity: 1,
         });
-        gsap.to([menuRef.current], { opacity: 0, duration: 0.5 });
       }
 
       menuButtonRef.current.forEach((button, i) => {
@@ -63,9 +53,17 @@ export default function Container() {
             backgroundColor: "#9922dd",
             duration: 1,
           });
+          gsap.to([button.children[1]], {
+            color: "#cf7cff",
+            duration: 1,
+          });
         } else {
           gsap.to([button.children[0]], {
             backgroundColor: "#444",
+            duration: 1,
+          });
+          gsap.to([button.children[1]], {
+            color: "#888",
             duration: 1,
           });
         }
@@ -164,7 +162,7 @@ export default function Container() {
             ref={(btnref) => (menuButtonRef.current[0] = btnref)}
           >
             <div className={styles.icon} />
-            Home
+            <h4>Home</h4>
           </button>
           {menu.map((item, i) => (
             <button
@@ -174,7 +172,7 @@ export default function Container() {
               ref={(btnref) => (menuButtonRef.current[i + 1] = btnref)}
             >
               <div className={styles.icon} />
-              {item.text}
+              <h4>{item.text}</h4>
             </button>
           ))}
         </div>
