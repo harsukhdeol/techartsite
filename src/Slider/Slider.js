@@ -37,25 +37,7 @@ const Slider = React.forwardRef(({ onClick }, ref) => {
           ">+=2"
         );
     });
-    /*  tl.to(
-      [...slidesRef.current],
-
-      {
-        opacity: 1,
-       
-        duration: 6,
-        stagger: 12
-      }
-    ).to(
-      [...slidesRef.current],
-
-      {
-        opacity: 0,
-        stagger: 12,
-        duration: 6,
-      }
-    ); */
-  }, []);
+  }, [tl]);
   return (
     <div ref={ref} className={styles.Slider}>
       <div className={styles.slideContainer}>
