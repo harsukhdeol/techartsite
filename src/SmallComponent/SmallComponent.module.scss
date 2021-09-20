@@ -1,0 +1,14 @@
+@import "../vars.scss";
+
+.SmallComponent {
+  .description {
+    color: $light-gray;
+    text-align: left;
+    margin: 0 1rem;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+}

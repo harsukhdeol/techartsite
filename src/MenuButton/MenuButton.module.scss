@@ -1,0 +1,25 @@
+@import "../vars.scss";
+
+.MenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 5vw 2rem 0;
+  cursor: pointer;
+  .image {
+    width: 120px;
+    height: 80px;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+
+    border: 1px solid #888;
+    border-radius: 10px;
+  }
+  .text {
+    color: $light-gray;
+    margin: 0 1.5rem;
+  }
+}

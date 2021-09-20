@@ -1,0 +1,26 @@
+.Page {
+  margin: 0 15vw 0 20vw;
+  padding: 3rem 00;
+}
+
+.Page .title {
+  color: #fff;
+  text-align: left;
+  margin-left: -10vw;
+  margin-bottom: 2rem;
+}
+
+.Page .background {
+  display: -ms-grid;
+  display: grid;
+}
+
+.Page .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  gap: 1rem;
+}
+/*# sourceMappingURL=Page.module.css.map */

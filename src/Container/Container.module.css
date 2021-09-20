@@ -1,0 +1,124 @@
+.Container {
+  overflow-x: hidden;
+}
+
+.Container .overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.Container .header,
+.Container .footer {
+  width: 100vw;
+  height: 5rem;
+  color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .header {
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
+}
+
+.Container .header > * {
+  position: relative;
+  left: 10vw;
+  text-transform: uppercase;
+}
+
+.Container .header :first-child {
+  margin-top: 7vh;
+}
+
+.Container .header :nth-child(2) {
+  margin: 0;
+  font-weight: 500;
+}
+
+.Container .footer {
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0) 20%, black);
+  padding: 1.5rem 0 0.5rem;
+  stroke: none;
+}
+
+.Container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: auto;
+  margin: 0 10vw;
+}
+
+.Container .socials svg {
+  height: 40px;
+  width: 40px;
+  fill: #888;
+}
+
+.Container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: absolute;
+  top: 20%;
+  left: 30px;
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.Container .menu button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+.Container .menu .icon {
+  height: 30px;
+  width: 3px;
+  margin: 8px;
+  background-color: #aaa;
+}
+/*# sourceMappingURL=Container.module.css.map */

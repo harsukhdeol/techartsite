@@ -1,0 +1,12 @@
+.SmallComponent .description {
+  color: #aaa;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.SmallComponent video {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+/*# sourceMappingURL=SmallComponent.module.css.map */

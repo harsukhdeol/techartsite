@@ -1,0 +1,17 @@
+@import "../vars.scss";
+
+.LargeComponent {
+  display: flex;
+  align-items: center;
+
+  .description {
+    color: $light-gray;
+    margin-left: 3rem;
+    text-align: left;
+  }
+  video {
+    width: 70%;
+    height: auto;
+    max-height: 500px;
+  }
+}
