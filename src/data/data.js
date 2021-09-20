@@ -22,7 +22,7 @@ let pages = [
     video: "./vfx/vfx.mp4",
     large: {
       video: "./vfx/vfx.mp4",
-      text: "Niagra particle effects with unreal",
+      text: "This effect is made up of two particle systems moving along a spline and a dissolve material that animates upwards. A custom Niagara module script was implemented to make the particles follow the curve ",
     },
     small: [
       {
