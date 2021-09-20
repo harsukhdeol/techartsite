@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/techartsite/static/css/main.3544e435.chunk.css",
-    "main.js": "/techartsite/static/js/main.b4888c43.chunk.js",
-    "main.js.map": "/techartsite/static/js/main.b4888c43.chunk.js.map",
-    "runtime-main.js": "/techartsite/static/js/runtime-main.5edfac66.js",
-    "runtime-main.js.map": "/techartsite/static/js/runtime-main.5edfac66.js.map",
-    "static/js/2.d5e1b9c4.chunk.js": "/techartsite/static/js/2.d5e1b9c4.chunk.js",
-    "static/js/2.d5e1b9c4.chunk.js.map": "/techartsite/static/js/2.d5e1b9c4.chunk.js.map",
-    "static/js/3.de4226fd.chunk.js": "/techartsite/static/js/3.de4226fd.chunk.js",
-    "static/js/3.de4226fd.chunk.js.map": "/techartsite/static/js/3.de4226fd.chunk.js.map",
-    "index.html": "/techartsite/index.html",
-    "static/css/main.3544e435.chunk.css.map": "/techartsite/static/css/main.3544e435.chunk.css.map",
-    "static/js/2.d5e1b9c4.chunk.js.LICENSE.txt": "/techartsite/static/js/2.d5e1b9c4.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.3544e435.chunk.css",
+    "main.js": "/static/js/main.b4888c43.chunk.js",
+    "main.js.map": "/static/js/main.b4888c43.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d1e8aba5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d1e8aba5.js.map",
+    "static/js/2.d5e1b9c4.chunk.js": "/static/js/2.d5e1b9c4.chunk.js",
+    "static/js/2.d5e1b9c4.chunk.js.map": "/static/js/2.d5e1b9c4.chunk.js.map",
+    "static/js/3.de4226fd.chunk.js": "/static/js/3.de4226fd.chunk.js",
+    "static/js/3.de4226fd.chunk.js.map": "/static/js/3.de4226fd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3544e435.chunk.css.map": "/static/css/main.3544e435.chunk.css.map",
+    "static/js/2.d5e1b9c4.chunk.js.LICENSE.txt": "/static/js/2.d5e1b9c4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5edfac66.js",
+    "static/js/runtime-main.d1e8aba5.js",
     "static/js/2.d5e1b9c4.chunk.js",
     "static/css/main.3544e435.chunk.css",
     "static/js/main.b4888c43.chunk.js"
