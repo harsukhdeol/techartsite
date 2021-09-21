@@ -5,6 +5,12 @@
   font-size: 0.8rem;
 }
 
+@media (max-width: 600px) {
+  .SmallComponent .description {
+    font-size: 1rem;
+  }
+}
+
 .SmallComponent video {
   width: 100%;
   height: auto;

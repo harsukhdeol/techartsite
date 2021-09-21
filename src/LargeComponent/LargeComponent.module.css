@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .LargeComponent .description {
+    font-size: 1rem;
+  }
+}
+
 .LargeComponent video {
   width: 70%;
   height: auto;
