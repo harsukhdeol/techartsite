@@ -12,14 +12,9 @@ const Slider = React.forwardRef(({ onClick }, ref) => {
 
   useEffect(() => {
     slidesRef.current.forEach((slide, i) => {
-      tl.to(
-        [slide],
-        {
-          opacity: 1,
-          duration: 2,
-        },
-        ">+=1"
-      )
+      tl.from([slide], {
+        opacity: 0,
+      })
         .to(
           [slide],
           {
@@ -32,9 +27,10 @@ const Slider = React.forwardRef(({ onClick }, ref) => {
           [slide],
           {
             opacity: 0,
-            duration: 2,
+            duration: 1,
           },
-          ">+=2"
+          ">+=1"
+        
         );
     });
   }, [tl]);
