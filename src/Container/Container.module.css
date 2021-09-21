@@ -90,6 +90,10 @@
   fill: #888;
 }
 
+.Container .socials svg:hover {
+  fill: #ccc;
+}
+
 .Container .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +122,14 @@
   border: none;
   margin: 0;
   text-decoration: none;
+}
+
+.Container .menu button:hover {
+  color: #eee;
+}
+
+.Container .menu button:hover .icon {
+  background-color: #ccc;
 }
 
 .Container .menu .icon {

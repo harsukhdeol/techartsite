@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@600&display=swap");
-
+* {
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);

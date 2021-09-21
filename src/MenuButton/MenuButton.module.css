@@ -12,6 +12,14 @@
   cursor: pointer;
 }
 
+.MenuButton:hover .image {
+  border: 1px solid #ccc;
+}
+
+.MenuButton:hover .text {
+  color: #eee;
+}
+
 .MenuButton .image {
   width: 120px;
   height: 80px;
