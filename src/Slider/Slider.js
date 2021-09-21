@@ -8,9 +8,8 @@ import styles from "./Slider.module.css";
 const Slider = React.forwardRef(({ onClick }, ref) => {
   const slidesRef = useRef([menu.length]);
 
-  let tl = gsap.timeline({ repeat: 0 });
-
   useEffect(() => {
+    let tl = gsap.timeline({ repeat: -1 });
     slidesRef.current.forEach((slide, i) => {
       tl.to(
         [slide],
@@ -28,15 +27,15 @@ const Slider = React.forwardRef(({ onClick }, ref) => {
         ">+=2"
       );
     });
-    tl.to(
+    /*   tl.to(
       [slidesRef.current[0]],
       {
         opacity: 1,
         duration: 2,
       },
       ">"
-    );
-  }, [tl]);
+    ); */
+  }, []);
   return (
     <div ref={ref} className={styles.Slider}>
       <div className={styles.slideContainer}>
