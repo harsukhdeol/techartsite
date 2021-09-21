@@ -13,6 +13,9 @@
     left: 0;
     transform: translate(-20%, 0);
     overflow: hidden;
+    @media (max-width: $mobile) {
+      opacity: 0;
+    }
   }
   .overlay {
     width: 100%;

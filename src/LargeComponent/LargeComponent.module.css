@@ -7,6 +7,15 @@
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .LargeComponent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .LargeComponent .description {
   color: #aaa;
   margin-left: 3rem;
@@ -14,9 +23,21 @@
   font-size: 0.8rem;
 }
 
+@media (max-width: 768px) {
+  .LargeComponent .description {
+    margin: 0;
+  }
+}
+
 .LargeComponent video {
   width: 70%;
   height: auto;
   max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .LargeComponent video {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=LargeComponent.module.css.map */

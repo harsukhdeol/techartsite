@@ -109,6 +109,12 @@
   pointer-events: auto;
 }
 
+@media (max-width: 600px) {
+  .Container .menu {
+    display: none;
+  }
+}
+
 .Container .menu button {
   display: -webkit-box;
   display: -ms-flexbox;

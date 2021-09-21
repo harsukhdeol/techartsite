@@ -2,12 +2,18 @@
 
 .Page {
   margin: 0 15vw 0 20vw;
-  padding: 3rem 00;
+  padding: 3rem 0;
+  @media (max-width: $mobile) {
+    margin: 0 5vw 0 5vw;
+  }
   .title {
     color: $body-text;
     text-align: left;
     margin-left: -10vw;
     margin-bottom: 2rem;
+    @media (max-width: $mobile) {
+      margin-left: 0;
+    }
   }
   .background {
     display: grid;
@@ -17,5 +23,8 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
     gap: 1rem;
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 }
