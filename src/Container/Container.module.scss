@@ -76,7 +76,7 @@
     pointer-events: auto;
     button {
       display: flex;
-      color: white;
+      color: #888;
       background-color: transparent;
       cursor: pointer;
       align-items: center;
@@ -89,7 +89,7 @@
       height: 30px;
       width: 3px;
       margin: 8px;
-      background-color: $light-gray;
+      background-color: #444;
     }
   }
 }

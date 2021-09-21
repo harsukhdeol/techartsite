@@ -7,7 +7,7 @@ import gsap from "gsap";
 
 export default function Container() {
   const pagesRef = useRef([]);
-  const menuButtonRef = useRef([menu.length + 1]);
+  const menuButtonRef = useRef([menu.length]);
   const menuRef = useRef(null);
   const slider = useRef(null);
   const header = useRef(null);
@@ -45,10 +45,10 @@ export default function Container() {
       }
 
       menuButtonRef.current.forEach((button, i) => {
-        let top = window.innerHeight * i;
-        let offset = window.innerHeight * 0.1;
-        let bottom = window.innerHeight * (i + 1);
-        if (pos >= top - offset && pos < bottom - offset) {
+        let top = window.innerHeight;
+        let loc = pagesRef.current[i].getBoundingClientRect();
+
+        if (loc.bottom > top / 2 && loc.top < top) {
           gsap.to([button.children[0]], {
             backgroundColor: "#9922dd",
             duration: 1,
@@ -75,7 +75,6 @@ export default function Container() {
 
   function onClick(i) {
     pagesRef.current[i].scrollIntoView();
-    console.log(i);
   }
 
   return (
@@ -164,7 +163,6 @@ export default function Container() {
             onClick={() => {
               slider.current.scrollIntoView();
             }}
-            ref={(btnref) => (menuButtonRef.current[0] = btnref)}
           >
             <div className={styles.icon} />
             <h4>Home</h4>
@@ -174,7 +172,7 @@ export default function Container() {
               key={i}
               className={styles.menuButton}
               onClick={() => onClick(i)}
-              ref={(btnref) => (menuButtonRef.current[i + 1] = btnref)}
+              ref={(btnref) => (menuButtonRef.current[i] = btnref)}
             >
               <div className={styles.icon} />
               <h4>{item.text}</h4>

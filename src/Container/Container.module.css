@@ -109,7 +109,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
+  color: #888;
   background-color: transparent;
   cursor: pointer;
   -webkit-box-align: center;
@@ -124,6 +124,6 @@
   height: 30px;
   width: 3px;
   margin: 8px;
-  background-color: #aaa;
+  background-color: #444;
 }
 /*# sourceMappingURL=Container.module.css.map */
