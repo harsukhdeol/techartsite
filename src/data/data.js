@@ -35,15 +35,15 @@ let pages = [
       },
       {
         video: "./vfx/4.mp4",
-        text: "I created the hair model with Maya Xgen, then ran a script to generate a vector field. I used the vector field to animate particles down the length ot the hair and created a material for ombre hair. ",
+        text: "I created a hair model with Maya Xgen, then ran a script to generate a vector field, which I used to animate particles down the length of the hair. I also created a material for ombre hair. ",
       },
       {
         video: "./vfx/5.mp4",
-        text: "This is another prototype of animating hair with Niagara that moved with the character. ",
+        text: "This is another prototype of animating hair I created with Niagara that also moved with the character. ",
       },
       {
         video: "./vfx/6.mp4",
-        text: "This is a Niagara match puzzle I created with C++. Moving the mouse horizontally changes the color and moving it vertically changes its speed.",
+        text: "This is a VFX matching puzzle I created with C++ and Niagara. Moving the mouse horizontally changes the color and moving it vertically changes its speed.",
       },
     ],
   },
@@ -52,24 +52,24 @@ let pages = [
     video: "./ui/ui.mp4",
     large: {
       video: "./ui/ui.mp4",
-      text: "This is the character customization screen I created for work. This UI is made up of reusable widgets that I developed and animated with UMG. I handled the data and logic with Blueprints. All of the UI screens below are protoypes I made from scratch, without any mockups, for the last game studio I worked at.  ",
+      text: "This is the character customization screen I created with reusable widgets that I developed and animated with UMG. I handled the data and logic with Blueprints. All of the UIs below are protoypes I made with UMG, without any mockups, for the last game studio I worked at.  ",
     },
     small: [
       {
         video: "./ui/4.mp4",
-        text: "This is quick tutorial screen that opens at the start of the game.   ",
+        text: "This is quick tutorial screen I created to describe the objectives of the game. The background was created in Illustrator and the animations were done with UMG timeline. ",
       },
       {
         video: "./ui/5.mp4",
-        text: "This is a more commplex UI system that displays the quests avaliable, allows users to select three and displays the progress when it is opened again. I linked the C++ functionality with Blueprints by exposing functions and variables to Blueprints and extending them in BLueprints with the correct references",
+        text: "This UI system displays the all quests available, allows users to select three and displays the progress when it is opened again. I linked the C++ functionality to the UI with Blueprints.",
       },
       {
         video: "./ui/2.mp4",
-        text: "This is a working prototype of the Lobby menus. This includes the Leaderboard, Challenges, BattlePass, Wardrobe ans Store. ",
+        text: "This is a working prototype of the Lobby menus. This includes the Leaderboard, Challenges, BattlePass, Wardrobe and Store. ",
       },
       {
         video: "./ui/3.mp4",
-        text: "This is the end game screen that gets the player's score and accomplishments and displays it on the screen. I created UI materials to animate the progress bar and the bottom text. ",
+        text: "This is the end game screen that displays the player's score and accomplishments. I created UI materials to animate the progress bar and the bottom text. ",
       },
     ],
   },
@@ -78,24 +78,24 @@ let pages = [
     video: "./arvr/1.mp4",
     large: {
       video: "./arvr/1.mp4",
-      text: "I created a scene in Unity for the AR game my company was developing. I setup the scene, and camera and experimented with different lighting and post processing setups to design different levels. I also created the VFX particles with Unity's Particle System and used C# to control their movement.",
+      text: "I setup this AR scene and experimented with different lighting and post processing setups to design different levels. I also created the VFX particles with Unity's Particle System and used C# to control their movement.",
     },
     small: [
       {
-        video: "./arvr/arvr.mp4",
+        video: "./arvr/arvr.mov",
         text: "Here is another version of the same scene with different lighting and post processing.",
       },
       {
         video: "./arvr/2.mp4",
-        text: "This is a prototype of the TikTok effect I created for my company to send to TikTok, so they could get approved to use their software commercially. Sincce I was expereinced creating AR filters with Snapchat, I was able to quickly pick up the new software and create this effect independently. ",
+        text: "This is the TikTok effect I created for my company to send to TikTok, so they could get approved to use their software commercially. Since I was experienced creating Snapchat filters, I was able to quickly pick up the new software and create this effect independently. ",
       },
       {
         video: "./arvr/3.mp4",
-        text: "This is one of the several Snapchat filters I have made. It detects a hand and orbits planets around it. I created the materials for the planets in Lens Studio and used JavaScript to contorl the motion",
+        text: "This is one of the several Snapchat filters I have made. It detects a hand and orbits planets around it. I created the materials for the planets in Lens Studio and used JavaScript to control the motion",
       },
       {
         video: "./arvr/4.mp4",
-        text: "I created several trendy filters as well that appeal to the young audience that use Snapchat, This is one most popular effects with over 350K views.",
+        text: "I created several trendy filters as well that appeal to the young audience that use Snapchat, This is one of my most popular effects with over 350K views.",
       },
     ],
   },
@@ -104,28 +104,28 @@ let pages = [
     video: "./materials/1.mp4",
     large: {
       video: "./materials/1.mp4",
-      text: "This is one material instance of my master fractal material. The game has a mathematical theme and required a interesting sky that was more intricate that just stars in the night sky. So I used HLSL to create a material function that generated a fractal with a variety of inputs and layered the fractals together to remove any harsh lines. ",
+      text: "This is one material instance of my master fractal material. The game had a mathematical theme and required an interesting sky material. So I used HLSL to create a material function that generated fractals and layered them together to remove any harsh lines. ",
     },
     small: [
       {
         video: "./materials/2.mp4",
-        text: "This is another material instance of the same fractal material that focused on different parameters of the Juila set",
+        text: "This is another material instance of the same fractal material that focused on different parameters of the Julia set.",
       },
       {
         video: "./materials/22.mp4",
-        text: "This is the material that was chosen as the final design as it was more suble and resembled stars.",
+        text: "This is the material that was chosen as the final design as it was more subtle and resembled stars.",
       },
       {
         video: "./materials/4.mp4",
-        text: "This is the shader I developed for the AR game. It animates the vertices according to the user-defined wind speed and colors the glass blades in a gradient of the user-defined colors",
+        text: "This is the shader I developed for the AR game. It animates the vertices according to the user-defined wind speed and colors the grass blades in a gradient of the user-defined colors",
       },
       {
         video: "./materials/3.mp4",
-        text: "I learned about fractal brownian motion and developed this shader in ShaderToy.",
+        text: "I learned about Fractal Brownian Motion and developed this shader in ShaderToy.",
       },
       {
         video: "./materials/5.mp4",
-        text: "The game I was hired to work on had fractal match puzzles where players could control the shape of the fractal with mouse movement. I created a material that took the numbers generated from the C++ puzzle code and a lookup table to create visually appealing fractals",
+        text: "The game had fractal match puzzles where players could control the shape of the fractal with mouse movement. I created a material that took the numbers generated from the C++ puzzle code and a lookup table to create visually appealing fractals",
       },
       {
         video: "./materials/6.mp4",
@@ -133,7 +133,7 @@ let pages = [
       },
       {
         video: "./materials/7.mp4",
-        text: "This is a prodecural material I created in Substance Designer. I used the shape and blend nodes to create the basic design and experimented with a variety of noise nodes to create imperfections to add realism. ",
+        text: "This is a procedural material I created in Substance Designer. I used the shape and blend nodes to create the basic design and experimented with a variety of noise nodes to create imperfections to add realism. ",
       },
       {
         video: "./materials/8.mp4",
