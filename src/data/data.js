@@ -78,24 +78,24 @@ let pages = [
     video: "./arvr/1.mp4",
     large: {
       video: "./arvr/1.mp4",
-      text: "Niagra particle effects with unreal",
+      text: "I created a scene in Unity for the AR game my company was developing. I setup the scene, and camera and experimented with different lighting and post processing setups to design different levels. I also created the VFX particles with Unity's Particle System and used C# to control their movement.",
     },
     small: [
       {
         video: "./arvr/arvr.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "Here is another version of the same scene with different lighting and post processing.",
       },
       {
         video: "./arvr/2.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is a prototype of the TikTok effect I created for my company to send to TikTok, so they could get approved to use their software commercially. Sincce I was expereinced creating AR filters with Snapchat, I was able to quickly pick up the new software and create this effect independently. ",
       },
       {
         video: "./arvr/3.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is one of the several Snapchat filters I have made. It detects a hand and orbits planets around it. I created the materials for the planets in Lens Studio and used JavaScript to contorl the motion",
       },
       {
         video: "./arvr/4.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "I created several trendy filters as well that appeal to the young audience that use Snapchat, This is one most popular effects with over 350K views.",
       },
     ],
   },
@@ -104,37 +104,40 @@ let pages = [
     video: "./materials/1.mp4",
     large: {
       video: "./materials/1.mp4",
-      text: "Niagra particle effects with unreal",
+      text: "This is one material instance of my master fractal material. The game has a mathematical theme and required a interesting sky that was more intricate that just stars in the night sky. So I used HLSL to create a material function that generated a fractal with a variety of inputs and layered the fractals together to remove any harsh lines. ",
     },
     small: [
       {
         video: "./materials/2.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is another material instance of the same fractal material that focused on different parameters of the Juila set",
       },
-
       {
-        video: "./materials/3.mp4",
-        text: "Niagra particle effects with unreal",
+        video: "./materials/22.mp4",
+        text: "This is the material that was chosen as the final design as it was more suble and resembled stars.",
       },
       {
         video: "./materials/4.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is the shader I developed for the AR game. It animates the vertices according to the user-defined wind speed and colors the glass blades in a gradient of the user-defined colors",
+      },
+      {
+        video: "./materials/3.mp4",
+        text: "I learned about fractal brownian motion and developed this shader in ShaderToy.",
       },
       {
         video: "./materials/5.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "The game I was hired to work on had fractal match puzzles where players could control the shape of the fractal with mouse movement. I created a material that took the numbers generated from the C++ puzzle code and a lookup table to create visually appealing fractals",
       },
       {
         video: "./materials/6.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "Different types of fractals required adjustments to ensure the color was mapped correctly. I created several lookup tables that could be applied to any type of fractal, creating over 20 different combinations.",
       },
       {
         video: "./materials/7.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is a prodecural material I created in Substance Designer. I used the shape and blend nodes to create the basic design and experimented with a variety of noise nodes to create imperfections to add realism. ",
       },
       {
         video: "./materials/8.mp4",
-        text: "Niagra particle effects with unreal",
+        text: "This is another HLSL shader I created in ShaderToy. I learned about the Mandelbrot Times Table and created a shader that connected different points along a circle to their factors ",
       },
     ],
   },
